@@ -129,7 +129,7 @@ const CampaignInsightsPanel: React.FC<CampaignInsightsProps> = ({ campaignId }) 
             <button
               key={range}
               onClick={() => setTimeRange(range)}
-              className={`px-3 py-1 rounded text-sm font-medium ${
+              className={`cursor-pointer px-3 py-1 rounded text-sm font-medium ${
                 timeRange === range
                   ? 'bg-blue-600 text-white'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'

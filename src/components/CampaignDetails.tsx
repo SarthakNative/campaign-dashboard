@@ -64,20 +64,20 @@ const CampaignDetails: React.FC = () => {
       <div className="flex items-center justify-between mb-6">
         <button
           onClick={() => navigate(-1)}
-          className="flex items-center text-blue-600 hover:text-blue-800"
+          className="cursor-pointer flex items-center text-blue-600 hover:text-blue-800"
         >
           ← Back to Campaigns
         </button>
-        <div className="flex gap-3">
+        <div className="flex gap-3 cursor-pointer">
           <button
             onClick={() => setShowInsights(!showInsights)}
-            className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
+            className="cursor-pointer px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
           >
             {showInsights ? 'Hide Insights' : 'Show Insights'}
           </button>
           <button
             onClick={handleStreamToggle}
-            className={`px-4 py-2 rounded transition-colors ${
+            className={`cursor-pointer px-4 py-2 rounded transition-colors ${
               isStreaming
                 ? 'bg-red-600 text-white hover:bg-red-700'
                 : 'bg-green-600 text-white hover:bg-green-700'

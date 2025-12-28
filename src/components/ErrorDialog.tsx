@@ -20,7 +20,7 @@ const ErrorDialog: React.FC = () => {
           <h2 className="text-xl font-bold text-red-600">Error {error.status}</h2>
           <button
             onClick={() => dispatch(hideErrorDialog())}
-            className="text-gray-500 hover:text-gray-700"
+            className="cursor-pointer text-gray-500 hover:text-gray-700"
           >
             ✕
           </button>
@@ -49,7 +49,7 @@ const ErrorDialog: React.FC = () => {
         <div className="mt-6 flex justify-end">
           <button
             onClick={() => dispatch(hideErrorDialog())}
-            className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors"
+            className="cursor-pointer px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors"
           >
             Close
           </button>
